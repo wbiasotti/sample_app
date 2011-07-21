@@ -1,4 +1,4 @@
-#require 'faker'
+require 'faker'
 
 namespace :db do
   desc "Fill database with sample data"
@@ -11,8 +11,8 @@ namespace :db do
   			 :password_confirmation => "foobar")
     admin.toggle!(:admin)
     99.times do |n|
-#      name = Faker::Name.name
-      name = "Example User#{n+1}"
+      name = Faker::Name.name
+#      name = "Example User#{n+1}"
       email = "example-#{n+1}@railstutorial.org"
       password = "password"
       User.create!(:name => name,
@@ -23,8 +23,8 @@ namespace :db do
 
     User.all(:limit => 6).each do |user|
       50.times do
-#     	user.microposts.create!(:content => Faker::Lorem.sentence(5))
-	user.microposts.create!(:content => "This is sentance #{n+1}")
+    	user.microposts.create!(:content => Faker::Lorem.sentence(5))
+#	user.microposts.create!(:content => "This is sentance #{n+1}")
       end
     end
   end
