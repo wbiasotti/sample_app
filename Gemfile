@@ -9,7 +9,8 @@ gem 'will_paginate', '3.0.pre2'
 
 group :development do
    gem 'rspec-rails','2.6.1'
-   gem 'faker', '0.3.1'
+#   gem 'faker', '0.3.1', :require => false
+
 end
 
 group :test do
