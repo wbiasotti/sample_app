@@ -3,11 +3,13 @@
     <td class = "main">
       <h1><%= @title %></h1>
 
+      <%= will_paginate %>
       <% if @users.any? %>
 	<ul class = "users">
 	  <%= render @users %>
 	</ul>
       <% end %>
+      <%= will_paginate %>
     </td>
     <td class = "sidebar round">
       <strong>Name</strong> <%= @user.name %><br/>
