@@ -99,7 +99,7 @@ PLATFORMS
 
 DEPENDENCIES
   factory_girl_rails (= 1.0)
-  faker (= 0.3.1)
+  faker
   gravatar_image_tag (= 1.0.0.pre2)
   rails (= 3.0.1)
   rake (= 0.8.7)
