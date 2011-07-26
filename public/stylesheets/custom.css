@@ -3,7 +3,7 @@
 }
 
 body {
-   background: #cff;
+   background: #000000;
 }
 
 header {
@@ -12,14 +12,14 @@ header {
 
 header img {
    padding: 1em;
-   background: #fff;
+   background: #c0c0c0;
 }
 
 section {
    margin-top: 1em;
    font-size: 120%;
    padding: 20px;
-   background: #fff;
+   background: #c0c0c0;
 }
 
 section h1 {
